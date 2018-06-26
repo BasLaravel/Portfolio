@@ -34,30 +34,116 @@
                 height: 100%; 
                 }
 
+                .footer{
+                    position:absolute;
+                    background-color:rgb(56,56,56);
+                    bottom:0;
+                    left:0;
+                    right:0;
+                    height: 65px;
+                    }
+
+                .copyright{
+                    color:#0066cc;
+                    margin-right: 2%;
+                }
+
+                .project{
+                   background-color:#67dbeb;   
+                }
+
+                .projects{
+                    position:absolute;
+                    bottom:10rem;
+                    left:0;
+                    right:0;
+                }
       
         </style>
     </head>
+
     <body>
 
-<!-- <iframe style="position: absolute; top: 0; left: 0;"
-src="https://www.youtube.com/embed/8HSr8BjcufM?autoplay=1&controls=0&loop=1&playlist=8HSr8BjcufM&amp;showinfo=0" 
-width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
- 
-
-<div class="videoContainer">
-        <iframe width="1920" height="1080" 
-        src="https://www.youtube.com/embed/videoseries?list=PLCPhqEUKuUo7lAtXkSXQyNtBH5xBNhL_m&autoplay=1&loop=1&controls=0&showinfo=0"
-        frameborder="0"></iframe> 
-   </div>  
+        <div class="videoContainer">
+                <iframe width="1920" height="1080" 
+                src="https://www.youtube.com/embed/videoseries?list=PLCPhqEUKuUo7lAtXkSXQyNtBH5xBNhL_m&autoplay=1&loop=1&controls=0&showinfo=0"
+                ></iframe> 
+        </div>  
 
 
+        <div class="container projects ">
+            <div class="row">
+                    <!-- Project PHP -->
+                    <div class="card col-md-3.5 m-2 project" style="width: 14rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Projects</h5>
+                                <p class="card-text">These are my projects bases on: HTML, CSS, Javascript, PHP, MySQL</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><a href="#">Forum-Laravel</a></li>
+                                <li class="list-group-item"><a href="#">2 #</a></li>
+                            </ul>
+                    </div>
+
+                    <!-- Project Java -->
+                    <div class="card col-md-3.5 m-2 project" style="width: 14rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Projects</h5>
+                                <p class="card-text">These are my projects bases Java</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><a href="#">Java app</a></li>
+                                <li class="list-group-item"><a href="#">2 #</a></li>
+                            </ul>
+                    </div>
+            </div>
+        </div>
 
 
    
 
+        <!-- footer -->
+        <div class="footer container-fluid">
+            <div class="row mt-3">
+                <div class="col" >
+                    <!-- Button trigger modal -->
+                    <a href="#" class="" role="button" data-toggle="modal" data-target="#exampleModalCenter"><font size="4">Contact</font></a>
+                </div>
+                <div class="col row">
+                    <p class="copyright ml-auto">&copy; Copyright 2018</p>
+                </div>
+            </div>
+        </div>
 
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                ...
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+   
+
+        <!-- scripts -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
     </body>
 
