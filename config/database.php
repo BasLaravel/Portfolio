@@ -1,5 +1,11 @@
 <?php
 
+$url = parse_url(getenv("DATABASE_URL"));
+    $host = $url["host"];
+    $username = $url["user"];
+    $password = $url["pass"];
+    $database = substr($url["path"], 1);
+    
 return [
 
     /*
@@ -12,8 +18,10 @@ return [
     | you may use many connections at once using the Database library.
     |
     */
+    
+   // 'default' => env('DB_CONNECTION', 'pgsql'),
 
-    'default' => env('DB_CONNECTION', 'pgsql'),
+   'default' => 'pg-heroku',
 
     /*
     |--------------------------------------------------------------------------
@@ -79,16 +87,14 @@ return [
         ],
 
         'pg-heroku' => [
-            'driver' => 'pgsql',
-            'host' => $DATABASE_URL["host"],
-            'port' => $DATABASE_URL["port"],
-            'database' => ltrim($DATABASE_URL["path"], "/"),
-            'username' => $DATABASE_URL["user"],
-            'password' => $DATABASE_URL["pass"],
-            'charset' => 'utf8',
-            'prefix' => '',
-            'schema' => 'public',
-            'sslmode' => 'require',
+            'driver'   => 'pgsql',
+            'host'     => $host,
+            'database' => $database,
+            'username' => $username,
+            'password' => $password,
+            'charset'  => 'utf8',
+            'prefix'   => '',
+            'schema'   => 'public',
         ],
 
     ],
