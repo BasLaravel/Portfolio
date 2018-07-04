@@ -6,7 +6,9 @@
                     <div class="card-header">Example Component</div>
 
                     <div class="card-body">
-                        I'm an example component.
+                        Dit een Vue component.
+                        De Javascript en css worden opgebouwd d.m.v. laravel-mix en node.js
+                        Ook is er een database gekoppeld aan deze app.
                     </div>
                 </div>
             </div>
