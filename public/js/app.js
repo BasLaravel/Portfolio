@@ -47329,6 +47329,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {
@@ -47361,7 +47363,7 @@ var staticRenderFns = [
             _vm._v(" "),
             _c("div", { staticClass: "card-body" }, [
               _vm._v(
-                "\n                    I'm an example component.\n                "
+                "\n                    Dit een Vue component.\n                    De Javascript en css worden opgebouwd d.m.v. laravel-mix en node.js\n                    Ook is er een database gekoppeld aan deze app.\n                "
               )
             ])
           ])
