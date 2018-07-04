@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('master');
 });
+
+Route::get('/test', 'DBtestController@store');
+Route::get('/name', 'DBtestController@index');

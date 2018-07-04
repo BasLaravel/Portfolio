@@ -85,8 +85,8 @@
                                 <p class="card-text">These are my projects bases on: HTML, CSS, Javascript, PHP, MySQL</p>
                             </div>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><a href="#">Forum-Laravel</a></li>
-                                <li class="list-group-item"><a href="#">2 #</a></li>
+                                <li class="list-group-item"><a href="/test">Forum-Laravel</a></li>
+                                <li class="list-group-item"><a href="/name">2 #</a></li>
                             </ul>
                     </div>
 
