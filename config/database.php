@@ -1,10 +1,11 @@
 <?php
 
-$url = parse_url(getenv("DATABASE_URL"));
-    $host = $url["host"];
-    $username = $url["user"];
-    $password = $url["pass"];
-    $database = substr($url["path"], 1);
+$DATABASE_URL = parse_url(getenv("DATABASE_URL"));
+// $url = parse_url(getenv("DATABASE_URL"));
+//     $host = $url["host"];
+//     $username = $url["user"];
+//     $password = $url["pass"];
+//     $database = substr($url["path"], 1);
     
 return [
 
@@ -86,15 +87,18 @@ return [
             'prefix' => '',
         ],
 
+
         'pg-heroku' => [
-            'driver'   => 'pgsql',
-            'host'     => $host,
-            'database' => $database,
-            'username' => $username,
-            'password' => $password,
-            'charset'  => 'utf8',
-            'prefix'   => '',
-            'schema'   => 'public',
+            'driver' => 'pgsql',
+            'host' => $DATABASE_URL["host"],
+            'port' => $DATABASE_URL["port"],
+            'database' => ltrim($DATABASE_URL["path"], "/"),
+            'username' => $DATABASE_URL["user"],
+            'password' => $DATABASE_URL["pass"],
+            'charset' => 'utf8',
+            'prefix' => '',
+            'schema' => 'public',
+            'sslmode' => 'require',
         ],
 
     ],
