@@ -18,6 +18,7 @@ return [
    // 'default' => env('DB_CONNECTION', 'pgsql'),
 
    'default' => 'pg-heroku',
+   //'default' => 'pgsql',
 
     /*
     |--------------------------------------------------------------------------

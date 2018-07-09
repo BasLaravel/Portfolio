@@ -1,12 +1,14 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>PortFolio Bas Kingma</title>
+        <title>{{config('app.name', 'Laravel')}}</title>
 
         <script src="/js/app.js" ></script>
 
@@ -18,7 +20,7 @@
 
         <!-- Styles -->
         <style>
-         .videoContainer {
+         /* .videoContainer {
                 position: absolute;
                 width: 100%;
                 height: 100%;
@@ -34,36 +36,58 @@
                 }
 
                 iframe {
-                /* optional */
+                 
                 width: 100%;
                 height: 100%; 
-                }
+                } */
 
-                .footer{
-                    position:absolute;
-                    background-color:rgb(56,56,56);
-                    bottom:0;
-                    left:0;
-                    right:0;
-                    height: 65px;
-                    }
+            body {
+                background:radial-gradient(circle,rgb(255, 255, 255),rgb(73, 119, 172));
+            }
 
-                .copyright{
-                    color:#0066cc;
-                    margin-right: 2%;
-                }
+            #dashboard {
+                display:flex;
+                background:rgb(160, 160, 160);
+                margin: 50px;
+                padding: 0;
+                height: 18rem;
+                border-radius: 10px 10px 10px 10px; 
+            }
 
-                .project{
-                   background-color:#67dbeb;   
-                }
+            #cut{
+                background-color: white;
+                height: 8rem;
+                border-radius: 10px 0 10px 0px;
+                margin-left: auto;
+                margin-top:auto;
+                background:rgb(124, 167, 216);
+            }
 
-                .projects{
-                    position:absolute;
-                    bottom:10rem;
-                    left:0;
-                    right:0;
-                }
-      
+            .footer{
+                position:absolute;
+                background-color:rgb(56,56,56);
+                bottom:0;
+                left:0;
+                right:0;
+                height: 65px;
+            }
+
+            .copyright{
+                color:#0066cc;
+                margin-right: 2%;
+            }
+
+            .project{
+                background-color:#67dbeb;   
+            }
+
+            /* .projects{
+                position:absolute;
+                bottom:10rem;
+                left:0;
+                right:0;
+            } */
+        
         </style>
     </head>
 
@@ -75,38 +99,38 @@
                 ></iframe> 
         </div>   -->
 
-
-        <div class="container projects ">
-            <div class="row">
-                    <!-- Project PHP -->
-                    <div class="card col-md-3.5 m-2 project" style="width: 14rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">Projects</h5>
-                                <p class="card-text">These are my projects bases on: HTML, CSS, Javascript, PHP, MySQL</p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><a href="/test">Forum-Laravel</a></li>
-                                <li class="list-group-item"><a href="/name">2 #</a></li>
-                            </ul>
-                    </div>
-
-                    <!-- Project Java -->
-                    <div class="card col-md-3.5 m-2 project" style="width: 14rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">Projects</h5>
-                                <p class="card-text">These are my projects bases Java</p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><a href="#">Java app</a></li>
-                                <li class="list-group-item"><a href="#">2 #</a></li>
-                            </ul>
-                    </div>
+        <!-- Nav -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+                </ul>
             </div>
-        </div>
+        </nav>
+  
+<!-- <div id="app">
+    <example-component>sf</example-component>
+   </div> -->
 
-<div id="app">
-<example-component>sf</example-component>
-   </div>
+  
+        <div class="container">
+            @yield('content')
+        </div>
 
         <!-- footer -->
         <div class="footer container-fluid">
@@ -144,12 +168,10 @@
         </div>
 
 
-   
-
         <!-- scripts -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> -->
 
     </body>
 
