@@ -54,7 +54,7 @@
       <!-- photos-->
       <div class="row mt-3">
         <div class="col" >
-            <img src="/images/radius.jpg" alt="product image" style="width:50%; height:300px;">
+            <img src="/images/radius.JPG" alt="product image" style="width:50%; height:300px;">
         </div>
     </div>
       
