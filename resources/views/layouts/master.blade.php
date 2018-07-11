@@ -45,14 +45,46 @@
                 background:radial-gradient(circle,rgb(255, 255, 255),rgb(73, 119, 172));
             }
 
+            table{
+                margin-top:20px;
+            }
+
             #dashboard {
                 display:flex;
-                background:rgb(160, 160, 160);
+                background:rgb(196, 214, 233);
                 margin: 50px;
                 padding: 0;
                 height: 18rem;
                 border-radius: 10px 10px 10px 10px; 
+                border: 1px solid black;
             }
+            #linken{
+                display: flex;
+            }
+            #linken a{
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 2rem
+            }
+
+            #profieltekst{
+                display: flex;
+            }
+            #profieltekst p{
+                margin:auto;    
+            }
+
+            #foto {
+                display: flex;
+            }
+            #foto img{
+                width:80%;
+                height: 80%;
+                margin: auto;
+                border-radius: 10px 10px 10px 10px;   
+            }
+
+
 
             #cut{
                 background-color: white;
@@ -108,7 +140,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Features</a>
