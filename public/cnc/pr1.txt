@@ -1,0 +1,487 @@
+
+%
+O00400 
+(FAMILIE PR. RONDE MANGATRINGEN) 
+(Bewerkt naar gewenste binnendiameter) 
+(automatische freesstapgrootte met Comp.) 
+(Gebruikt probe) 
+(variabelen invullen dan start) 
+(Nullen op G54) 
+
+G40 G49 G80 G90 
+
+(IN TE VULLEN IN MM) 
+(0=NIET) 
+(1=WEL) 
+
+(Bewerkingsopties) 
+#841= FIX[ 0 ] (Elke ring nullen? X-Y) 
+#842= FIX[ 0 ] (hoogte nullen? Z) 
+#127= FIX[ 1 ] (Groef?) 
+#108= FIX[ 1 ] (Bin.kant frezen?) 
+#801= FIX[ 0 ] (Bov.kant vlakken?) 
+#800= FIX[ 1 ] (Kamer frezen?) 
+#802= FIX[ 1 ] (Nabew. kamer?) 
+#863= FIX[ 1 ] (GATEN BOREN) 
+
+
+(Gegevens Ring) 
+#101= 370. (Uiteindelijke binnendiameter) 
+#102= 364. (Actuele binnendiameter) 
+#120= 460. (Buitenkant ring) 
+
+
+(Gegevens Binnenkant frezen) 
+(vingerfrees) 
+#821= FIX[ 4 ] (toolnummer Frees) 
+#104= FIX[ 4500 ] (RPM FREES) 
+#105= 16. (Dia.Frees, ongeveer) 
+#106= -28. (DIEPTE 1,NEGATIEF) 
+#833= 0. (DIEPTE 2,NEGATIEF) 
+#103= 1.2 (Freesstap) 
+#107= 1. (VEILIGE AFSTAND frees) 
+#831= 2000. (Voeding) 
+#832= FIX[ 1 ] (Koeling aan?) 
+
+(Nafrezen) 
+(Met vingerfrees) 
+#843= FIX[ 1 ] (NAFREZEN?) 
+#844= -26. (DIEPTE) 
+#845= FIX[ 4 ] (toolnummer Frees) 
+#846= FIX[ 5000 ] (RPM FREES) 
+#847= 2000 (Voeding) 
+
+(Nafrezen binnenkant) 
+(Met radiusfrees) 
+(Totale diepte invoeren) 
+#850= FIX[ 0 ] (Nabew.met rad fr.?) 
+#851= -3.85 (DIEPTE) 
+#858= FIX[ 8000 ] (RPM) 
+#859= 2000 (VOEDING) 
+
+(Gegevens Vlakfrees) 
+#109= FIX[ 7 ] (Toolnummer vlakfrees) 
+#822= FIX[ 650 ] (RPM Frees) 
+#128= 80. (Diameter vlakfrees) 
+#121= -0.5 (Vlakdiepte negatief) 
+#149= 750 (Voed. inloop) 
+#122= 950. (Voed. Vlakken) 
+#840= FIX[ 1 ] (BIN. KOELING) 
+
+(Gegevens Groef) 
+(frees 8) 
+#124= FIX[ 8. ] (Groefbreedte 8 of 6.8) 
+#123= 398. (Steek v/d groef) 
+#125= -6.4 (Groefdiepte, negatief) 
+#853= FIX[ 4600 ] (RPM) 
+#854= 650 (INLOOP VOEDING) 
+#855= 650 (VOEDING) 
+
+(groef nafrezen met radius fr.) 
+(totale diepte invoeren) 
+#126= -3.85 (Diepte,negatief) 
+#856= FIX[ 8000 ] (RPM) 
+#857= 2500 (VOEDING) 
+
+
+(Gegevens tapgaten) 
+(Boorgegevens) 
+#130= 430 (Steek v/d gaten) 
+#131= 20 (Aantal gaten zonder punt!) 
+#135= FIX[ 24 ] (Toolnummer boor T?) 
+#136= FIX[ 3300 ] (RPM boor) 
+#132= -19.5 (Boordiepte, negatief) 
+#137= 420 (voeding boor) 
+#138= FIX[ 1 ] (Binnenkoeling?) 
+
+(Gegevens Soeverein) 
+#140= FIX[ 22 ] (TOOLnummer soev.) 
+#141= FIX[ 900 ] (toerntal soev.) 
+#142= 500 (voeding soev.) 
+#134= -5.3 (Soev.diepte, negatief) 
+
+(Gegevens Tap) 
+#148= FIX[ 1 ] (Tapstop?) 
+#143= 200. (X-locatie voor het tappen) 
+#144= FIX[ 9 ] (Toolnummer tap) 
+#145= FIX[ 380 ] (RPM tap) 
+#146= 665. (voeding tap) 
+#133= -17.5 (Tapdiepte, negatief) 
+
+
+(Gegevens Kamer) 
+(Met radiuscompensatie) 
+(frees voor kamer) 
+#810= FIX[ 12 ] (TOOLNR.) 
+#811= FIX[ 1350 ] (RPM) 
+#812= FIX[ 0 ] (B.Koeling?) 
+#813= FIX[ 0 ] (Koeling?) 
+#814= 40. (DIA.ongeveer) 
+#815= -0.8 (Diepte stap) 
+#816= -1.5 (Totale Diepte) 
+#817= 398. (Buitenkant kamer) 
+#818= 2000 (Voeding) 
+#819= 1200 (Inloop voeding) 
+
+(Gegeven nawerk. Kamer) 
+(Met radiuscompensatie) 
+(bodem of zijkant) 
+#823= FIX[ 7 ] (TOOLNR.) 
+#824= FIX[ 750 ] (RPM) 
+#825= FIX[ 1 ] (B.Koeling?) 
+#826= FIX[ 0 ] (Koeling?) 
+#827= 80. (DIA.ongeveer) 
+#828= -1.6 (Totale Diepte) 
+#829= 900 (Voeding) 
+#830= 800 (Inloop voeding) 
+
+(GEGEVENS RAND KAMER NABEWerken.) 
+(MET RADIUSFREES) 
+(TOTALE DIEPTE INVOEREN) 
+#860= -1. (DIEPTE) 
+#861= FIX[ 8000 ] (RPM) 
+#862= 2000 (VOEDING) 
+
+(Overige gegevens) 
+#147= 0 (X-eindpositie) 
+
+
+#115= #101 / 2 
+IF [ #801 EQ 0 ] THEN #121= FIX[ 0 ] 
+IF [ #108 EQ 0 ] THEN #850= FIX[ 0 ] 
+
+(TOT HIER INVULLEN) 
+
+(SOEV.DIEPTES) 
+(Bij 0.5 vlakdiepte) 
+(M8 -2.8) 
+(M16 -3.2) 
+(M20 -5.0) 
+
+(G55 EN G56 GELIJK MAKEN MET G54) 
+#5241= #5221 
+#5242= #5222 
+#5243= #5223 
+#5261= #5221 
+#5262= #5222 
+#5263= #5223 
+IF [ #841 EQ 0 ] GOTO6 
+
+(PROBE X NULPUNT) 
+T1 M06 
+T5 
+G00 G54 G43 X0. Y0 Z100. H01 
+G65 P9832 (PROBE AAN) 
+Z50. 
+G65 P9810 Z-7. F1500. 
+G65 P9812 X [ #102 + 2 ] S1. 
+G00 Z15. 
+
+#5243= #5223 
+#5263= #5223 
+#5241= #5221 
+#5261= #5221 
+
+(PROBE Y WAARDEN) 
+G00 G55 X0. Y - [ #102 / 2 - 10 ] Z15. 
+G65 P9810 Z-10. F1000. 
+G65 P9811 Y - [ #102 / 2 ] S2. 
+G00 Z20. 
+
+G00 G56 X0. Y [ #102 / 2 - 10 ] Z20. 
+G65 P9810 Z-10. F1000. 
+G65 P9811 Y [ #102 / 2 ] S3. 
+G00 Z100. 
+G65 P9833 (PROBE UIT) 
+
+
+#5242= #5242 - [ #102 / 2 ] 
+#5262= #5262 + [ #102 / 2 ] 
+
+
+(G54 Y-NULPUNT UITREKENEN) 
+#110= #5242 
+#111= #5262 
+#112= #111 - #110 
+#113= #112 / 2 
+#5222= #5242 + #113 
+#114= #113 - #107 
+N6 
+
+IF [ #842 EQ 0 ] GOTO8 
+
+(PROBE Z) 
+T1 M06 
+T5 
+G00 G54 G43 X - [ #101 / 2 + 20 ] Y0 Z100. H01 
+Z50. 
+G65 P9832 (PROBE AAN) 
+G65 P9810 Z15. F1000. (BEVEILIGDE BEWEGING) 
+G65 P9811 Z0. S1. 
+G00 Z100. 
+G65 P9833 (PROBE UIT) 
+N8 
+
+
+IF [ ROUND[ #108 ] EQ 0 ] GOTO100 
+(Binnenkant Ring Vingerfrezen) 
+(eerste diepte) 
+
+T#821 M06 
+G00 G54 G43 X0 Y0 Z10. H#821 
+S#104 M03 
+IF [ #832 EQ 0 ] GOTO5 
+M08 
+N5 
+G13 Z#106 I [ #102 / 2 - #107 ] K [ #101 / 2 ] Q#103 D#821 F#831 
+G00 Z10. 
+M09 
+
+IF [ ROUND[ #833 ] EQ 0 ] GOTO7 
+
+(tweede diepte) 
+T#821 M06 
+G00 G54 G43 X0 Y0 Z10. H#821 
+S#104 M03 
+IF [ #832 EQ 0 ] GOTO5 
+M08 
+N5 
+G13 Z#833 I [ #102 / 2 - #107 ] K [ #101 / 2 ] Q#103 D#821 F#831 
+G00 Z10. 
+M09 
+
+N7 
+
+IF [ #108 EQ 0 ] GOTO9 
+IF [ #843 EQ 0 ] GOTO9 
+T#845 M06 (NAFREZEN) 
+T#109 
+G00 G54 G43 X0 Y0 Z10. H#845 
+S#846 M03 
+M08 
+G13 Z#844 I [ #101 / 2 ] D#845 F#847 
+G00 Z10. 
+M09 
+N9 
+N100 
+
+IF [ #801 EQ 0 ] GOTO101 
+T#109 M06 (VLAKKEN) 
+T23 
+G00 G54 G43 X0. Y [ #115 - #128 ] Z10. H#109 
+IF [ #840 EQ 0 ] GOTO151 
+M88 
+N151 
+S#822 M03 
+G00 Z3. 
+G01 Z#121 F#122 
+G01 Y [ [ #120 - #101 ] / 2 / 2 + #115 ] F#149 
+G03 J - [ [ #120 - #101 ] / 2 / 2 + #115 ] F#122 
+G00 Z100. 
+M09 
+M89 
+M01 
+N101 
+
+
+
+IF [ #800 EQ 0 ] GOTO102 
+
+T#810 M06 (KAMER) 
+T#823 
+G00 G54 G43 X0 Y [ #102 / 2 - #814 ] Z100. H#810 
+IF [ ROUND[ #813 ] EQ 0 ] GOTO3 
+M08 
+N3 
+IF [ ROUND[ #812 ] EQ 0 ] GOTO4 
+M88 
+N4 
+S#811 M03 
+#820= #815 
+#837= #816 
+WHILE [ #837 LT #820 ] DO1 
+G00 G54 G43 X0 Y [ #102 / 2 - #814 ] Z10. H#810 
+Z#820 
+G01 G41 Y [ #817 / 2 ] D#810 F#819 
+G03 J - [ #817 / 2 ] F#818 
+G00 Z10. 
+G40 Y [ #102 / 2 - #814 ] 
+#820= #820 + #815 
+END1 
+G00 Z#837 
+G01 G41 Y [ #817 / 2 ] D#810 F#819 
+G03 J - [ #817 / 2 ] F#818 
+G00 Z10. 
+G40 Y [ #102 / 2 - #814 ] 
+G00 Z350. 
+M01 
+
+
+IF [ #802 EQ 0 ] GOTO103 
+
+T#823 M06 (KAMER NABEW.) 
+T19 
+G00 G54 G43 X0 Y [ #102 / 2 - #827 * 2. ] Z100. H#823 
+IF [ ROUND[ #826 ] EQ 0 ] GOTO1 
+M08 
+N1 
+IF [ ROUND[ #825 ] EQ 0 ] GOTO2 
+M88 
+N2 
+S#824 M03 
+Z10. 
+G01 Z [ #828 + 4. ] F500. 
+G01 G41 Y [ #817 / 2 ] Z#828 D#823 F#830 
+G03 J - [ #817 / 2 ] F#829 
+G00 Z10. 
+G40 Y [ #102 / 2 - #827 * 2. ] 
+G00 Z100. 
+M09 
+M89 
+
+T19 M06 (RAD. FREES ) 
+T#135 
+G00 G54 G43 X0. Y [ #817 / 2 - 2. ] Z30. H19 
+S#861 M03 
+M08 
+G00 Z2. 
+G01 Z#860 F100. 
+G03 J - [ #817 / 2 - 2. ] F#862 
+G00 Z10. 
+M09 
+N103 
+N102 
+
+
+IF [ ROUND[ #127 ] EQ 0 ] GOTO176 
+IF [ #124 EQ 6 ] GOTO110 
+
+
+T23 M06 (FREES 8) 
+T19 
+G00 G54 G43 X0. Y [ #123 / 2 ] Z10. H23 
+S#853 M03 
+M08 
+G01 Z0.6 F500. 
+G03 X - [ #123 / 2 ] Y0 Z#125 R [ #123 / 2 ] F#854 
+G03 I [ #123 / 2 ] F#855 
+G00 Z50. 
+M09 
+
+T19 M06 (RAD. FREES ) 
+(groef) 
+T#135 
+G00 G54 G43 X0. Y [ #123 / 2 + 2. ] Z10. H19 
+S#856 M03 
+M08 
+G00 Z2. 
+G01 Z [ #126 + 2.5 ] F250. 
+G01 Z#126 F100. 
+G03 J - [ #123 / 2 + 2. ] F#857 
+G00 Z10. 
+G00 X0. Y [ #123 / 2 - 2. ] Z10. 
+G00 Z2. 
+G01 Z [ #126 + 2.5 ] F250. 
+G01 Z [ #126 - 0.2 ] F100. 
+G02 J - [ #123 / 2 - 2. ] F#857 
+G00 Z30. 
+M09 
+
+N176 
+IF [ #850 EQ 0 ] GOTO15 
+T19 M06 (RAD. FREES ) 
+(binnendiameter) 
+T13 
+G00 G54 G43 X0. Y [ #101 / 2 - 2. ] Z30. H19 
+S#858 M03 
+M08 
+G00 Z2. 
+G01 Z#851 F100. 
+G03 J - [ #101 / 2 - 2. ] F#859 
+G00 Z10. 
+M09 
+N15 
+
+
+IF [ ROUND[ #124 ] EQ 8 ] GOTO150 
+
+N110 T23 M06 (FREES 6.) 
+T22 
+G00 G54 G43 X0. Y [ #123 / 2 + 0.4 ] Z10. H23 
+S7000 M03 
+M08 
+G01 Z4. F500. 
+G01 Z1. F150. 
+G03 X - [ #123 / 2 + 0.4 ] Y0 Z [ #125 + #121 ] R [ #123 / 2 + 0.4 ] F650. 
+G03 I [ #123 / 2 + 0.4 ] 
+G00 Z10. 
+M09 
+
+T23 M06 (FREES 6.) 
+T#135 
+G00 G54 G43 X0. Y [ #123 / 2 - 0.4 ] Z10. H23 
+S7000 M03 
+M08 
+G01 Z4. F500. 
+G01 Z1. F150. 
+G03 X - [ #123 / 2 - 0.4 ] Y0 Z [ #125 + #121 ] R [ #123 / 2 - 0.4 ] F1200. 
+G03 I [ #123 / 2 - 0.4 ] 
+G00 Z10. 
+M09 
+
+N150 
+IF [ #863 EQ 0 ] GOTO500 
+T#135 M06 (Boren) 
+T#140 
+G00 G54 G43 X0 Y0 Z10. H#135 
+IF [ #138 EQ 0 ] GOTO151 
+M88 
+N151 M08 
+S#136 M03 
+G81 G98 Z#132 R6. F#137 L0 
+G70 I [ #130 / 2 ] J15. L#131 
+G80 M09 
+M89 
+G00 Z150. 
+M00 
+(BOOR.SCHOONMAKEN) 
+
+
+T#140 M06 (SOEV.) 
+T#144 
+G00 G54 G43 X0 Y0 Z10. H#140 
+S#141 M03 
+M08 
+G81 G98 Z#134 R6. F#142 L0 
+G70 I [ #130 / 2 ] J15. L#131 
+G80 M09 
+G00 Z200. 
+G00 X#143 
+
+
+T#144 M06 (TAPPEN) 
+T2 
+IF [ #148 EQ 0 ] GOTO160 
+G91 G28 Y0 
+M00 
+G40 G49 G80 G90 
+N160 
+G00 G54 G43 X0. Y0 Z50. H#144 
+S#145 M03 
+M08 
+G84 G98 Z#133 R6. F#146 L0 
+G70 I [ #130 / 2 ] J15. L#131 
+G80 M09 
+G00 Z200. 
+
+N500 
+G00 Z100. M09 
+Y300. Z350. X#147 
+M00 
+
+T2 M06 
+T1 
+G91 G28 Y0 
+G40 G49 G80 G90 
+M30 
+%

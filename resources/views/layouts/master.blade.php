@@ -81,19 +81,25 @@
                 width:80%;
                 height: 80%;
                 margin: auto;
-                border-radius: 10px 10px 10px 10px;   
+                
+            }
+
+            .productfoto{
+                border-radius: 10px 10px 10px 10px;  
+                border: 1px solid black; 
             }
 
 
 
-            #cut{
+
+            /* #cut{
                 background-color: white;
                 height: 8rem;
                 border-radius: 10px 0 10px 0px;
                 margin-left: auto;
                 margin-top:auto;
                 background:rgb(124, 167, 216);
-            }
+            } */
 
             .footer{
                 position:absolute;

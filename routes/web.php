@@ -12,16 +12,23 @@
 */
 
 Route::get('/', function () {
-    return view('main');
+    return view('Dashboard_and_projects.dashboard_and_projects');
 });
 
 //cv route
 Route::get('/cv', 'CvController@index');
 
 //CNC project routes
-Route::get('/cnc/program1', 'CncController@index');
-Route::get('/cnc/program2', 'CncController@index1');
+Route::get('/cnc/program1', 'CncProjectsController@index');
+Route::get('/cnc/program2', 'CncProjectsController@index1');
 
+//PHP project routes
+Route::get('/php/forum', 'PhpProjectsController@index');
+Route::get('/php/webshop', 'PhpProjectsController@index1');
 
+//Java projects
+Route::get('/java/todolist', 'JavaProjectsController@index');
+
+// test voor db
 Route::get('/test', 'DBtestController@store');
 Route::get('/name', 'DBtestController@index');

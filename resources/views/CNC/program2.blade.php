@@ -12,13 +12,10 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <td scope="col" style="width:14rem;">Description of project</td>
+                    <td scope="col" style="width:14rem;">Description of the project</td>
                     <td>Make a program that mills a radius on a round shaped object</td>
                 </tr>
-                <tr>
-                    <td>Goals</td>
-                    <td>How to use math to calculate the mill paths</td>
-                </tr>
+        
                 <tr>
                     <td>Scope</td>
                     <td>The mill should start on top of the material, the outer circumference
@@ -54,7 +51,7 @@
       <!-- photos-->
       <div class="row mt-3">
         <div class="col" >
-            <img src="/images/radius.JPG" alt="product image" style="width:50%; height:300px;">
+            <img class="productfoto" src="/images/radius.jpg" alt="product image" style="width:40%; height:300px;">
         </div>
     </div>
       
