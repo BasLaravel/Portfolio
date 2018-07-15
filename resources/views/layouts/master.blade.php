@@ -72,7 +72,8 @@
                 display: flex;
             }
             #profieltekst p{
-                margin:auto;    
+                margin:auto;   
+                padding:2%; 
             }
 
             #foto {
