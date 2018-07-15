@@ -22,7 +22,8 @@
                             The data should be stored in a text file. When you open the application the activities are shown in order by date.
                             Activities that are expire this day should be marked in red. Activities that expire tomorrow should be marked in orange.
                             Beyond tomorrow is marked in black. An user can delete an activity by right mouse clicking or using
-                            the delete key. An user can filter today's activities.
+                            the delete key. An user can filter today's activities. When the program starts it should pupulate the list automatically.
+                            When the program is terminated it should save all changes made.
                         </td>
                     </tr>
                     <tr>

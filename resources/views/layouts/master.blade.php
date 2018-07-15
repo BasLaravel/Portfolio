@@ -51,10 +51,11 @@
 
             #dashboard {
                 display:flex;
+                flex-grow:2;
                 background:rgb(196, 214, 233);
                 margin: 50px;
                 padding: 0;
-                height: 18rem;
+                height: auto;
                 border-radius: 10px 10px 10px 10px; 
                 border: 1px solid black;
             }
@@ -148,7 +149,7 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="#">Features</a>
                 </li>
                 <li class="nav-item">
@@ -156,7 +157,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
+                </li> -->
                 </ul>
             </div>
         </nav>
@@ -171,17 +172,17 @@
         </div>
 
         <!-- footer -->
-        <div class="footer container-fluid">
+        <!-- <div class="footer container-fluid">
             <div class="row mt-3">
                 <div class="col" >
-                    <!-- Button trigger modal -->
+                    <!-- Button trigger modal
                     <a href="#" class="" role="button" data-toggle="modal" data-target="#exampleModalCenter"><font size="4">Contact</font></a>
                 </div>
                 <div class="col row">
                     <p class="copyright ml-auto">&copy; Copyright 2018</p>
                 </div>
             </div>
-        </div>
+        </div> -->
 
 
         <!-- Modal -->
