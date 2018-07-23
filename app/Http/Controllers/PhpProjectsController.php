@@ -6,13 +6,20 @@ use Illuminate\Http\Request;
 
 class PhpProjectsController extends Controller
 {
-    public function index(){
+
+    public function portfolioIndex(){
+
+        return view('PHP.portfolio');  
+    
+    }
+
+    public function forumIndex(){
 
         return view('PHP.forum');  
     
     }
 
-    public function index1(){
+    public function webshopIndex(){
 
         return view('PHP.webshop');  
     

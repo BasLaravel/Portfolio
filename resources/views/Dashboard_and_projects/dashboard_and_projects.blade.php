@@ -61,9 +61,10 @@
         <img class="card-img-top" src="/images/business.gif" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">Projects</h5>
-                <p class="card-text">These are my projects bases on: HTML, CSS, Javascript, PHP, MySQL</p>
+                <p class="card-text">These are my projects based on: HTML, CSS, Javascript, PHP, MySQL</p>
             </div>
             <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="/php/portfolio">My Portfolio</a></li>
                 <li class="list-group-item"><a href="/php/forum">Web Forum</a></li>
                 <li class="list-group-item"><a href="/php/webshop">Webshop</a></li>
             </ul>
@@ -75,7 +76,7 @@
         <img class="card-img-top" src="/images/learning.gif" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Projects</h5>
-                    <p class="card-text">These are my projects bases on Java</p>
+                    <p class="card-text">These are my projects based on Java</p>
                 </div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item"><a href="/java/todolist">Java Todo List application</a></li>

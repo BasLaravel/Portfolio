@@ -91,7 +91,38 @@
                 border: 1px solid black; 
             }
 
+            .carousel-control-prev-icon,
+            .carousel-control-next-icon {
+            height: 100px;
+            width: 100px;
+            outline: none;
+            background-size: 100%, 100%;
+            border-radius: 50%;
+            border: none;
+            background-image: none;
+            }
 
+            .carousel-control-next-icon:after
+            {
+            content: '>';
+            font-size: 35px;
+            color: black;
+            }
+
+            .carousel-control-prev-icon:after {
+            content: '<';
+            font-size: 35px;
+            color: black;
+            }
+
+            .carousel-indicators li{
+            background-color: gray;
+            }
+
+            .carousel-indicators .active {
+            height: 6px;
+            background-color:black;
+            }
 
 
             /* #cut{

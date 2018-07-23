@@ -7,7 +7,7 @@
         <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th scope="col" colspan="2" style="width:18rem;">Laravel & Vue bases web forum</th>
+                        <th scope="col" colspan="2" style="width:18rem;">Java Todo List with GUI</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -28,7 +28,7 @@
                     </tr>
                     <tr>
                         <td>Goals</td>
-                        <td></td>
+                        <td>Using Java to make a small application. To get comfortable to use it.</td>
                     </tr>
                     <tr>
                         <td>Used languages</td>
@@ -38,20 +38,23 @@
                     <tr>
                         <td>Knowledge before</td>
                         <td>
+                        The basics in OOP, Java Collections and JavaFX.
                         </td>
                     </tr>
                     <tr>
                         <td>Knowledge after</td>
                         <td>
+                        Understanding in: observableArrayList, DateTimeFormatter, cellFactory and Predicate.
+                        Better Understanding in JavaFX.
                         </td>
                     </tr>
                     <tr>
                         <td>The most fun part?</td>
-                        <td></td>
+                        <td>Making a graphical user interface</td>
                     </tr>
                     <tr>
                         <td>GitHub</td>
-                        <td><a href="#" target="_blank">To GitHub</a></td>
+                        <td><a href="https://github.com/BasLaravel/TodoList" target="_blank">To GitHub</a></td>
                     </tr>
                 </tbody>
         </table>

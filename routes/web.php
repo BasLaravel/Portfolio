@@ -23,8 +23,9 @@ Route::get('/cnc/program1', 'CncProjectsController@index');
 Route::get('/cnc/program2', 'CncProjectsController@index1');
 
 //PHP project routes
-Route::get('/php/forum', 'PhpProjectsController@index');
-Route::get('/php/webshop', 'PhpProjectsController@index1');
+Route::get('/php/portfolio', 'PhpProjectsController@portfolioIndex');
+Route::get('/php/forum', 'PhpProjectsController@forumIndex');
+Route::get('/php/webshop', 'PhpProjectsController@webshopIndex');
 
 //Java projects
 Route::get('/java/todolist', 'JavaProjectsController@index');
