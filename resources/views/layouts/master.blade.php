@@ -8,64 +8,63 @@
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{config('app.name', 'Laravel')}}</title>
+        <title>{{config('app.name', 'Portfolio van Bas Kingma')}}</title>
 
         <script src="/js/app.js" ></script>
 
         <!-- Fonts -->
         <link href="/css/app.css" rel="stylesheet">
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-         -->
-        <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script> -->
 
-        <!-- Styles -->
+
+    
         <style>
-         /* .videoContainer {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                right: 0;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                z-index:-1;
-                }
-
-                iframe {
-                 
-                width: 100%;
-                height: 100%; 
-                } */
-
+  
             body {
-                background:radial-gradient(circle,rgb(255, 255, 255),rgb(73, 119, 172));
+                background-color: rgb(234,234,234);
+                margin-bottom:5%;
+            }
+
+            .navbar{
+                background-color: #2aaaed;
             }
 
             table{
                 margin-top:20px;
             }
 
-            #dashboard {
-                display:flex;
-                flex-grow:2;
-                background:rgb(196, 214, 233);
-                margin: 50px;
-                padding: 0;
-                height: auto;
-                border-radius: 10px 10px 10px 10px; 
-                border: 1px solid black;
+            .projects{
+                margin-left:auto;
+                margin-right:auto;
             }
+
+            .dashboard {
+                display:flex;
+                background:#ffffff;
+                margin-top: 50px;
+                margin-left:auto;
+                margin-right:auto;
+                margin-bottom:50px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                width:90%;
+              
+            }
+            #layoutblue{
+                background-color: #2aaaed;
+                height: 18rem;
+                margin:-2%;
+            }
+
             #linken{
                 display: flex;
             }
+
             #linken a{
                 margin-left: auto;
                 margin-right: auto;
-                margin-top: 2rem
+                margin-top: 2rem;
+                color:black;
+                font-weight:bold;
             }
 
             #profieltekst{
@@ -80,14 +79,16 @@
                 display: flex;
             }
             #foto img{
-                width:80%;
+                width:70%;
                 height: 80%;
                 margin: auto;
-                
             }
 
-            .productfoto{
-                border-radius: 10px 10px 10px 10px;  
+            .list-group-item a{
+                color:black;
+            }
+
+            .productfoto{ 
                 border: 1px solid black; 
             }
 
@@ -124,41 +125,34 @@
             background-color:black;
             }
 
-
-            /* #cut{
-                background-color: white;
-                height: 8rem;
-                border-radius: 10px 0 10px 0px;
-                margin-left: auto;
-                margin-top:auto;
-                background:rgb(124, 167, 216);
-            } */
-
-            .footer{
-                position:absolute;
-                background-color:rgb(56,56,56);
-                bottom:0;
-                left:0;
-                right:0;
-                height: 65px;
+            .card-wrapper{
+                display:flex;
+                margin-right: 1.8rem;
+                margin-bottom:3rem;
+                padding:0;
             }
 
-            .copyright{
-                color:#0066cc;
-                margin-right: 2%;
+            .layoutorange{
+                background-color:#0066cc;
+                height:100%; 
+                width:1rem;
+                margin-right:-2px;
+                padding:0;
+                margin:-2%;
+            }
+           
+            .layoutcard{
+                background-color: rgb(234,234,234);
+                width:14rem;
+                padding:0;
+            
             }
 
-            .project{
-                background-color:#67dbeb;   
+            .card,
+            .card-img-top{
+                border-radius: 0px 0px 0px 0px;
             }
 
-            /* .projects{
-                position:absolute;
-                bottom:10rem;
-                left:0;
-                right:0;
-            } */
-        
         </style>
     </head>
 
@@ -171,34 +165,26 @@
         </div>   -->
 
         <!-- Nav -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-            <a class="navbar-brand" href="#">Navbar</a>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="{{ url('/')}}">
+                <img src="/images/home.png" alt="Home" style="width:30px;">
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    <!-- <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a> -->
                 </li>
                 <!-- <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link disabled" href="#">Disabled</a>
-                </li> -->
+                </li>  -->
                 </ul>
             </div>
         </nav>
   
-<!-- <div id="app">
-    <example-component>sf</example-component>
-   </div> -->
 
-  
         <div class="container">
             @yield('content')
         </div>

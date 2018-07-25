@@ -5,11 +5,10 @@
  <div class="container">
      <div class="row">
         <div class="col-md-12">
-            <embed src="/images/CV.pdf" width="100%" height="900px" type='application/pdf'>
+            <embed src="/images/resume.pdf" width="100%" height="900px" type='application/pdf'>
         </div>
      </div>
 </div>
-
 
 @endsection
 

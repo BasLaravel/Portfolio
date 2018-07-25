@@ -50,8 +50,8 @@
                         Import the LaravelShoppingcart package (Crinsane) and work with it.</td>
                     </tr>
                     <tr>
-                        <td>GitHub (yet to come)</td>
-                        <td><a href="#" target="_blank">To GitHub</a></td>
+                        <td>GitHub</td>
+                        <td><a href="#" target="_blank">Coming soon</a></td>
                     </tr>
                 </tbody>
         </table>
