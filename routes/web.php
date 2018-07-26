@@ -19,8 +19,8 @@ Route::get('/', function () {
 Route::get('/cv', 'CvController@index');
 
 //CNC project routes
-Route::get('/cnc/program1', 'CncProjectsController@index');
-Route::get('/cnc/program2', 'CncProjectsController@index1');
+Route::get('/cnc/program1', 'CncProjectsController@CncPr1index');
+Route::get('/cnc/program2', 'CncProjectsController@CncPr2index');
 
 //PHP project routes
 Route::get('/php/portfolio', 'PhpProjectsController@portfolioIndex');
@@ -30,6 +30,3 @@ Route::get('/php/webshop', 'PhpProjectsController@webshopIndex');
 //Java projects
 Route::get('/java/todolist', 'JavaProjectsController@index');
 
-// test voor db
-Route::get('/test', 'DBtestController@store');
-Route::get('/name', 'DBtestController@index');

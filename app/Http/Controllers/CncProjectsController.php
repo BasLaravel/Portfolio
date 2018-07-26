@@ -6,13 +6,13 @@ use Illuminate\Http\Request;
 
 class CncProjectsController extends Controller
 {
-    public function index(){
+    public function CncPr1index(){
 
         return view('CNC.program1');  
     
     }
 
-    public function index1(){
+    public function CncPr2index(){
 
         return view('CNC.program2');  
     
