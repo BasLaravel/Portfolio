@@ -37,7 +37,6 @@
     </div>
 
 
-
     <div class="row projects">
         <!-- Project CNC -->
         <div class="col-md-3.5 card-wrapper">
@@ -90,7 +89,7 @@
         </div>
 
              <!-- Actueel -->
-             <div class="col-md-3.5 card-wrapper">
+        <div class="col-md-3.5 card-wrapper">
             <div class="layoutorange" style="background-color:#ff8b5f" ></div>
             <div class="card layoutcard" >
                 <img class="card-img-top" src="/images/recentnewsedit.gif"  alt="Card image cap">
@@ -106,8 +105,6 @@
                 </ul>
             </div>
         </div>
-
-
     </div>
 </div>
 

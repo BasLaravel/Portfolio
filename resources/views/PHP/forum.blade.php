@@ -63,15 +63,12 @@
     </div>
 
  <!-- Button trigger modal -->
- <div class="row mt-3">
+    <div class="row mt-3">
             <div class="col" >
                 <a href="#" class="" role="button" data-toggle="modal" data-target="#exampleModalCenter">
                 <font size="4">Play video of project</font></a>
             </div>
     </div>
-
-
-
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
@@ -100,12 +97,5 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
 </div>
       @endsection

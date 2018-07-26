@@ -36,7 +36,7 @@
                 </tr>
                 <tr>
                     <td>GitHub</td>
-                    <td><a href="#" target="_blank">Coming soon</a></td>
+                    <td><a href="https://github.com/BasLaravel/Portfolio" target="_blank">To GitHub</a></td>
                 </tr>
             </tbody>
         </table>
