@@ -37,7 +37,7 @@
     </div>
 
          <div >
-            <img id="psd" src="/images/psd.jpg" alt="Profielfoto">
+            <img id="psd" src="/images/psd.jpg" alt="psd certificate">
         </div>
 
 
