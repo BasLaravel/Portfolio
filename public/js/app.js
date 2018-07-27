@@ -13866,8 +13866,7 @@ module.exports = Cancel;
 /* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(12);
-module.exports = __webpack_require__(43);
+module.exports = __webpack_require__(12);
 
 
 /***/ }),
@@ -13883,6 +13882,7 @@ module.exports = __webpack_require__(43);
 
 __webpack_require__(13);
 window.Vue = __webpack_require__(36);
+__webpack_require__(39);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -13890,7 +13890,7 @@ window.Vue = __webpack_require__(36);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example-component', __webpack_require__(39));
+Vue.component('example-component', __webpack_require__(40));
 
 window.onload = function () {
 
@@ -47153,14 +47153,47 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 
 /***/ }),
 /* 39 */
+/***/ (function(module, exports) {
+
+//vergroot image on hover
+$(document).ready(function () {
+
+    var screensize = $(window).width();
+    var screenInBetween = screensize > 980 && screensize < 1420;
+
+    if (screenInBetween) {
+        $('#psd').css('width', '8rem');
+    }
+
+    $('#psd').hover(function () {
+        var options = {
+            'width': '22rem'
+        };
+        $(this).css(options);
+    }, function () {
+        if (screensize > 980 && screensize < 1420) {
+            var options = {
+                'width': '8rem'
+            };
+        } else {
+            var options = {
+                'width': '12rem'
+            };
+        }
+        $(this).css(options);
+    });
+});
+
+/***/ }),
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var normalizeComponent = __webpack_require__(40)
+var normalizeComponent = __webpack_require__(41)
 /* script */
-var __vue_script__ = __webpack_require__(41)
+var __vue_script__ = __webpack_require__(42)
 /* template */
-var __vue_template__ = __webpack_require__(42)
+var __vue_template__ = __webpack_require__(43)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -47199,7 +47232,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, exports) {
 
 /* globals __VUE_SSR_CONTEXT__ */
@@ -47308,7 +47341,7 @@ module.exports = function normalizeComponent (
 
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47339,7 +47372,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -47380,12 +47413,6 @@ if (false) {
     require("vue-hot-reload-api")      .rerender("data-v-0ca92eac", module.exports)
   }
 }
-
-/***/ }),
-/* 43 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

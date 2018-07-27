@@ -3,16 +3,16 @@
 
 @section('content')
 
-<div class="container">
+<div class="container-fluid">
     <div class="row dashboard">
         <!-- dashboard -->
-        <div id="layoutblue" class="col-md-1"></div>
-        <div id="linken" class="col-md-2">
+        <div id="layoutblue" class="col-lg-1"></div>
+        <div id="linken" class="col-lg-2">
             <a class="" href="{{ url('/cv')}}">
                 <img src="/images/cv-image2.png" alt="Home">
             </a>
         </div>
-        <div id="profieltekst" class="col-md-5 ">
+        <div id="profieltekst" class="col-lg-5 ">
             <p>Het meest interessante gedeelte van mijn
                 werk als CNC frezer vond ik het schrijven van
                 CNC programma's. Hierop ben ik begonnen
@@ -31,10 +31,14 @@
             </p>
         </div>
         
-        <div id="foto" class="col-md-4">
+        <div id="foto" class="col-lg-4">
             <img src="/images/bas.jpg" alt="Profielfoto">
         </div>
     </div>
+
+         <div >
+            <img id="psd" src="/images/psd.jpg" alt="Profielfoto">
+        </div>
 
 
     <div class="row projects">
@@ -97,7 +101,7 @@
                 <h5 class="card-title">Upcoming events</h5>
                 </div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><a href="#">Preparing for Scrum exam (PSD1) </a></li>
+                    <li class="list-group-item"><a href="/psd">Past the PSD 1 assessment</a></li>
                     <li class="list-group-item"><a href="#"></a></li>
                     <li class="list-group-item"><a href="#"></a></li>
                     <li class="list-group-item"><a href="#"></a></li>

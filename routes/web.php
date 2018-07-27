@@ -18,6 +18,9 @@ Route::get('/', function () {
 //cv route
 Route::get('/cv', 'CvController@index');
 
+//psd route
+Route::get('/psd', 'PsdController@index');
+
 //CNC project routes
 Route::get('/cnc/program1', 'CncProjectsController@CncPr1index');
 Route::get('/cnc/program2', 'CncProjectsController@CncPr2index');
