@@ -98,7 +98,7 @@
             <div class="card layoutcard" >
                 <img class="card-img-top" src="/images/recentnewsedit.gif"  alt="Card image cap">
                 <div class="card-body">
-                <h5 class="card-title">Upcoming events</h5>
+                <h5 class="card-title">What's new?</h5>
                 </div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item"><a href="/psd">Past the PSD 1 assessment</a></li>
