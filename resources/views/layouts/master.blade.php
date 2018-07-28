@@ -130,6 +130,10 @@
             background-color:black;
             }
 
+            .carousel-item{
+                height: 1274px;
+            }
+
             .card-wrapper{
                 display:flex;
                 margin-right: 1.8rem;

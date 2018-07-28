@@ -101,8 +101,8 @@
                 <h5 class="card-title">What's new?</h5>
                 </div>
                 <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Starting the final assignment at <a href="https://www.codegorilla.nl/" target="_blank">CodeGorilla</a></li>
                     <li class="list-group-item"><a href="/psd">Past the PSD 1 assessment</a></li>
-                    <li class="list-group-item"><a href="#"></a></li>
                     <li class="list-group-item"><a href="#"></a></li>
                     <li class="list-group-item"><a href="#"></a></li>
                     <li class="list-group-item"><a href="#"></a></li>
