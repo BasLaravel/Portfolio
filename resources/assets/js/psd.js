@@ -29,6 +29,13 @@ $( document ).ready(function() {
         }
     );
 
+    $(document).on('click','#psd', function(){
+
+        $(location).attr('href','/psd');
+        
+ 
+    });
+
 
 });
 

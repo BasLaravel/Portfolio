@@ -13,7 +13,7 @@
                 <tbody>
                     <tr>
                         <td scope="col" style="width:14rem;">Description of the project</td>
-                        <td>Build a webshop with basic functionality. And an admin backend.</td>
+                        <td>My first project in Laravel; build a webshop with basic functionality. And an admin backend.</td>
                     </tr>
                     <tr>
                         <td>Scope</td>

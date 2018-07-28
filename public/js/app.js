@@ -47171,7 +47171,7 @@ $(document).ready(function () {
         };
         $(this).css(options);
     }, function () {
-        if (screensize > 980 && screensize < 1420) {
+        if (screenInBetween) {
             var options = {
                 'width': '8rem'
             };
@@ -47181,6 +47181,11 @@ $(document).ready(function () {
             };
         }
         $(this).css(options);
+    });
+
+    $(document).on('click', '#psd', function () {
+
+        $(location).attr('href', '/psd');
     });
 });
 
