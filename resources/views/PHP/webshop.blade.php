@@ -18,7 +18,7 @@
                     <tr>
                         <td>Scope</td>
                         <td>Design a web forum with all the basis functionality: See all products divided into three product categories,
-                        login/register functionality, A user can select a product. That product is then 'added' into the shopping basket. A user can view their shopping
+                        login/register functionality, use two guards;admin and user, A user can select a product. That product is then 'added' into the shopping basket. A user can view their shopping
                         basket. And edit the number of articles in the basket. The admin backend has the following functionality:
                         See all products, edit a product, delete a product, add a new product, export the list of all products, view all uploaded product images
                         (on hovering the image should enlarge), delete an image and export the list of images. 
@@ -26,12 +26,12 @@
                     </tr>
                     <tr>
                         <td>Goals</td>
-                        <td>Learn to use Laravel 5.6. Get a basic understanding of MVC and CRUD.
-                        Learn to import a package using composer. </td>
+                        <td>Learn to use Laravel (5.6). Get a basic understanding of MVC and CRUD.
+                         Learn to import a package using composer. </td>
                     </tr>
                     <tr>
                         <td>Used languages</td>
-                        <td>HTML 5, PHP (Laravel-framework), MySQL, HTML and CSS
+                        <td>HTML 5, PHP (Laravel-framework), MySQL, jQuery, HTML and CSS
                         </td>
                     </tr>
                     <tr>
@@ -46,12 +46,16 @@
                     </tr>
                     <tr>
                         <td>The most fun part?</td>
-                        <td>'Discovering' the laravel framework. And experiencing the benefit/power of it.
-                        Import the LaravelShoppingcart package (Crinsane) and work with it.</td>
+                        <td>I never used the laravel php framework (So the code may seem a little bit clumsy, the goal was to make it work
+                        and learn the architecture of the framework.) So the discovering of it was fun and very useful.
+                        I experienced that using the framework is a huge benefit: you have lots of features straight out
+                        of the box, the whole project structure is initialised at the start, MVC and CRUD is inbuilt,
+                        the architectural project structure does make your intentions clear and many more features.
+                        A cool feature is to use packages. For example I used the LaravelShoppingcart package by Crinsane.</td>
                     </tr>
                     <tr>
                         <td>GitHub</td>
-                        <td><a href="#" target="_blank">Coming soon</a></td>
+                        <td><a href="https://github.com/BasLaravel/Webshop" target="_blank">To Github</a></td>
                     </tr>
                 </tbody>
         </table>
@@ -63,25 +67,29 @@
 
                     <!-- Indicators -->
                     <ul class="carousel-indicators">
-                    <li data-target="#demo" data-slide-to="0" class="active"></li>
-                    <li data-target="#demo" data-slide-to="1"></li>
-                    <li data-target="#demo" data-slide-to="2"></li>
-                    <li data-target="#demo" data-slide-to="3"></li>
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                        <li data-target="#demo" data-slide-to="3"></li>
+                        <li data-target="#demo" data-slide-to="4"></li>
                     </ul>
 
                     <!-- The slideshow -->
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src="/images/cart.png"  alt="Los Angeles">
+                         <div class="carousel-item active">
+                            <img class="d-block w-100" src="/images/index.png"  alt="project image">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="/images/cart.png"  alt="project image">
                         </div>
                         <div class="carousel-item ">
-                            <img class="d-block w-100" src="/images/admindashboard.png"  alt="Los Angeles">
+                            <img class="d-block w-100" src="/images/admindashboard.png"  alt="project image">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="/images/newproduct.png"  alt="Los Angeles">
+                            <img class="d-block w-100" src="/images/newproduct.png"  alt="project image">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="/images/allproducts.png"  alt="Los Angeles">
+                            <img class="d-block w-100" src="/images/allproducts.png"  alt="project image">
                         </div>
                     </div>
 
