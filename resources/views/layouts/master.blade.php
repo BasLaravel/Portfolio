@@ -130,8 +130,8 @@
             background-color:black;
             }
 
-            .carousel-item{
-                height: 1274px;
+            .carousel-item img{
+                height: 637px;
             }
 
             .card-wrapper{
